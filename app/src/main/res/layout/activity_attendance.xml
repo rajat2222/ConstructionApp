@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcomegridview.Attendance"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="cursive"
+        android:textSize="22sp"
+        android:textColor="#0600B0"
+        android:id="@+id/txt1"
+        />
+
+    <Button
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btnclose"
+        android:background="@drawable/ic_close_black_24dp"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt1"
+        android:background="@color/coursegnd">
+
+        <Button
+            android:id="@+id/takeattendance"
+            android:layout_width="148dp"
+            android:layout_height="148dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/takeattendance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:fontFamily="casual"
+            android:text="Take Attendance"
+            android:layout_below="@id/takeattendance"
+            android:textColor="#ffffff"
+            android:id="@+id/txt2"
+            />
+
+        <Button
+            android:id="@+id/showattendance"
+            android:layout_width="148dp"
+            android:layout_height="148dp"
+            android:layout_below="@id/txt2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/showattendance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:text="Show Attendance"
+            android:layout_below="@id/showattendance"
+            android:textColor="#ffffff"
+            android:id="@+id/txt3"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

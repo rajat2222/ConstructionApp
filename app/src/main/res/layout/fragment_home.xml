@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.Home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Om Ram Construction"
+        android:fontFamily="cursive"
+        android:textSize="22sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt1"
+        />
+
+    <View
+        android:layout_width="290dp"
+        android:layout_height="2dp"
+        android:background="#E91E63"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/txt1"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/view"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/view"
+        android:background="@drawable/background"
+        android:id="@+id/imge"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_menu"
+        android:layout_below="@+id/imge"
+        android:layout_marginTop="-150dp"
+        android:id="@+id/grdlayout"
+        android:layout_alignParentBottom="true"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/labour"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/labour"
+                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorFlowerDark"
+                            android:padding="8dp"
+                            android:text="Labour"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/mistri"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/mistri"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorGrapeFruitDark"
+                            android:padding="8dp"
+                            android:text="Mistri"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Second Row-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/addlabour"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/addlabour"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorGrassDark"
+                            android:padding="5dp"
+                            android:text="Add\nLabour"
+                            android:textAlignment="center"
+                            android:textColor="#37474F"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/addmistri"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/addmistri"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorBlueJeansDark"
+                            android:padding="2dp"
+                            android:text="Add\nMistri"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!-- End Second Row-->
+                <!-- Third Row-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/attendance"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/attend"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorAquaDark"
+                            android:padding="7dp"
+                            android:text="Attendance"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/wagesrecord"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/showdetails"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorLavanderDark"
+                            android:padding="3dp"
+                            android:text="Daily Wages Record"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="13sp"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- End Third Row-->
+                <!-- Fourth Row-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/updatelm"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/update"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorMintDark"
+                            android:padding="2dp"
+                            android:text="Update \n Labour Mistri"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="13sp"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/deletelm"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/delete"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/coursegnd"
+                            android:padding="2dp"
+                            android:text="Delete\n Labour Mistri"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="13sp"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- End Fourth Row-->
+                <!--  Fifth Row-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/sites"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/build"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/black"
+                            android:text="My Sites"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="19sp"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- End fifth Row-->
+                <!--
+
+
+                      <LinearLayout
+                          android:layout_width="0dp"
+                          android:layout_height="140dp"
+                          android:layout_margin="2dp"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:orientation="vertical">
+
+                          <Button
+                              android:id="@+id/btn7"
+                              android:layout_width="70dp"
+                              android:layout_height="70dp"
+                              android:layout_marginTop="20dp"
+                              android:background="@drawable/ic_percentage_64" />
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_marginTop="10dp"
+                              android:background="@color/colorPinkRoseDark"
+                              android:padding="2dp"
+                              android:text="Aptitude \nPreparation"
+                              android:textAlignment="center"
+                              android:textColor="@color/colorWhite"
+                              android:textSize="13sp" />
+
+                      </LinearLayout>
+
+                      <LinearLayout
+                          android:layout_width="0dp"
+                          android:layout_height="140dp"
+                          android:layout_margin="2dp"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:orientation="vertical">
+
+                          <Button
+                              android:id="@+id/btn8"
+                              android:layout_width="70dp"
+                              android:layout_height="70dp"
+                              android:layout_marginTop="20dp"
+                              android:background="@drawable/profile" />
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_marginTop="10dp"
+                              android:background="@color/colorBitterSweetDark"
+                              android:padding="2dp"
+                              android:text="Your \n Profile"
+                              android:textAlignment="center"
+                              android:textColor="@color/colorWhite"
+                              android:textSize="13sp" />
+
+                      </LinearLayout>
+
+
+                  </LinearLayout>
+                  - End Third Row-->
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

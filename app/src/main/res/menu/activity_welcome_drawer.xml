@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_learn"
+            android:title="Mistri"
+           />
+
+        <item
+            android:id="@+id/nav_quiz"
+
+            android:title="Labour"
+             />
+        <item
+            android:id="@+id/nav_Interview"
+
+            android:title="Add Employee" />
+
+        <item
+            android:id="@+id/nav_new"
+
+            android:title="Delete Employee" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_aboutus"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_rateus"
+                android:title="Rate US" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
+
+<!--
+  android:icon="@drawable/ic_home_black_24dp"
+  android:icon="@drawable/navlearn"
+                  android:icon="@drawable/ic_menu_send"
+                  android:icon="@drawable/navquiz"
+                android:icon="@drawable/ic_live_help_black_24dp"
+              android:icon="@drawable/navwhatsnew"
+                android:icon="@drawable/ic_star_half_black_24dp"
+                android:icon="@drawable/ic_iq_64"
+                      android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_learn"
+
+
+-->
